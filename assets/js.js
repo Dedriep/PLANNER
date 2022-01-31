@@ -14,7 +14,6 @@ $(".content").click(function () {
         .text()
         .trim();
     var textInput = $("<textarea>")
-        .addClass("form-control")
         .val(text);
      $(this).replaceWith(textInput);
 
