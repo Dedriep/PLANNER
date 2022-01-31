@@ -1,10 +1,11 @@
 
 document.getElementById("currentDay")
-var currentDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a")
+var currentDate = moment().format("dddd, MMMM Do YYYY")
+
 
 console.log(currentDate)
 
 // display current time
-    $("currentDay").html(currentDate)
+    $("#currentDay").text(currentDate)
 
 
