@@ -9,22 +9,18 @@ console.log(currentDate)
 $("#currentDay").text(currentDate)
 
 //update  schedule when clicked
-$(".content").click(function () {
+$(".content").click(function updateText() {
     var text = $(this)
         .text()
         .trim();
     var textInput = $("<textarea>")
+        .addClass("textarea")
         .val(text);
      $(this).replaceWith(textInput);
 
 })
 
 // save changes
-
-$(".save").click(function () {
-  
-
-})
 
 
 //color time
