@@ -22,6 +22,12 @@ $(".content").click(function () {
 
 // save changes
 
+$(".save").click(function () {
+  
+
+})
+
+
 //color time
 
 
