@@ -2,14 +2,17 @@
 document.getElementById("currentDay")
 var currentDate = moment().format("dddd, MMMM Do YYYY")
 document.getElementsByClassName("schedule-block")
+var noteid = 0
+var saveBTN = document.querySelectorAll('.save')
 
 console.log(currentDate)
 
 // display current time
 $("#currentDay").text(currentDate)
 
+
 //update  schedule when clicked
-$(".content").click(function updateText() {
+var updatecontent = $(".content").click(function updateText() {
     var text = $(this)
         .text()
         .trim();
@@ -18,12 +21,41 @@ $(".content").click(function updateText() {
         .val(text);
      $(this).replaceWith(textInput);
 
+    //  noteid += 1
+
 })
+
+console.log(update)
+
+
 
 // save changes
 
 
-//color time
+// var scheduleData = {
+// noteid,
+// notecontent
+// }
+
+
+// $('save').click(function (){
+
+// init ()
+// })
+
+
+
+// function init (){
+
+// updatecontent
+
+//     Storage.setItem('note-info', scheduleData)
+
+// }
+
+
+// Storage.setItem('note-info', scheduleData)
+    //color time\
 
 
 
