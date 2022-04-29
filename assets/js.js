@@ -3,7 +3,6 @@ document.getElementById("currentDay")
 var currentDate = moment().format("dddd, MMMM Do YYYY")
 document.getElementsByClassName("schedule-block")
 var noteid = 0
-var saveBTN = document.querySelectorAll('.save')
 
 console.log(currentDate)
 
@@ -20,12 +19,20 @@ var updatecontent = $(".content").click(function updateText() {
         .addClass("textarea")
         .val(text);
      $(this).replaceWith(textInput);
+     textInput.trigger('focus')
 
-    //  noteid += 1
+     console.log( $(this))
+
+     var saveBTN = document.querySelectorAll('.save')
+
+     saveBTN.forEach(save=>{
+         save.addEventListener('click', function saveContent(event){
+            console.log(textInput)
+         })
+     })
 
 })
 
-console.log(update)
 
 
 
